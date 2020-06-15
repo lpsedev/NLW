@@ -1,0 +1,46 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#page-create-point header a span{
+    margin-right: 16px;
+    display: flex;
+    background-image: url('../icones/arrow-left.svg');
+     width: 20px;
+     height: 24px;
+
+}
+/* Formulario*/
+form{
+
+    /* Adicionando margens no topo da pagina de 80 pixels*/
+    margin-top: 80px;
+    
+    /* Adicionar a cor do formulario */
+    background-color: white;
+    /* Preenchimemto */
+    padding: 64px;
+    /* Adicionando bordas */
+    border-radius: 8px;
+
+    /* Adicionando largura maxima do formulario */
+    max-width: 730px;
+
+    /* O tamanho da caixa sera a borda */
+    box-sizing: border-box;
+}
