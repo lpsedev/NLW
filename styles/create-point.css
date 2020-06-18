@@ -48,7 +48,7 @@ form h1{
 }
 
 form fieldset{
-    margin-top: 64px;
+    margin-top: 60px;
     border: 0;
 }
 form legend{
@@ -87,7 +87,11 @@ form select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: #fbfbfd;
     border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
     
 }
 form label{
@@ -116,4 +120,37 @@ form button{
 }
 form button:hover{
     background-color: #2fb86e;
+}
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: #f5f5f5;
+    
+    list-style: none;
+    border-radius: 8px;
+    height: 180px;
+    border: 2px solid #f5f5f5;
+    padding: 32px 24px 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+.items-grid li spam{
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
 }

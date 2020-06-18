@@ -41,24 +41,24 @@
                     <div class="field">
                         <label for="name">Nome da entidade</label>
                         <!--entrada dos dados-->
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                     </div>
 
                     <div class="field-group">
                         <div class="field">
                             <label for="address">Endereço</label>
-                            <input type="text" name="address">
+                            <input type="text" name="address" required>
                         </div>
                         <div class="field">
                             <label for="address2">Número/Complemento</label>
-                            <input type="text" name="address2">
+                            <input type="text" name="address2" required>
                         </div>
                     </div>
 
                     <div class="field-group">
                         <div class="field">
                             <label for="state">Estado</label>
-                            <select name="uf">
+                            <select name="uf" required>
                                 <option value="">Selecione o estado</option>
                             </select>
                             <input type="hidden" name ="state"> 
@@ -66,7 +66,7 @@
                         </div>
                         <div class="field">
                             <label for="city">Cidade</label>
-                            <select name="city" disabled>
+                            <select name="city" disabled required>
                                 <option value="">Selecione a cidade</option>
                             </select>
                             <input type="hidden" name ="city">  
@@ -76,6 +76,40 @@
                        
                     </div>
 
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h2>Ítens de coleta</h2>
+                    </legend>
+                    <div class="items-grid">
+                        
+                        <li data-id="1">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/lampadas.svg" alt="Papéis e papelão">
+                            <spam>Papéis e papelão</spam>
+                        </li>
+                        <li data-id="2">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/baterias.svg" alt="Pilhas e Baterias">
+                            <spam>Pilhas e Baterias</spam>
+                        </li>
+                        <li data-id="3">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/papeis-papelao.svg" alt="Papéis e Papelão">
+                            <spam>Papéis e Papelão</spam>
+                        </li>
+                        <li data-id="4">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/eletronicos.svg" alt="Resíduos eletrônicos">
+                            <spam>Resíduos eletrônicos</spam>
+                        </li>
+                        <li data-id="5">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/organicos.svg" alt="Resíduos orgânicos">
+                            <spam>Resíduos orgânicos</spam>
+                        </li>
+                        <li data-id="6">
+                            <img src="/home/luizdev/meus_cursos/javascrip_html/NLW/icones/oleo.svg" alt="Óleo de cozinha">
+                            <spam>Óleo de cozinha</spam>
+                        </li>
+
+                        
+                    </div>
                 </fieldset>
 
                 <button type="submit">Cadastrar ponto de coleta</button>
