@@ -41,3 +41,32 @@ function getCities(event){
 document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities) 
+
+const itemsToCollect = document.querySelectorAll(".items-grid li")
+for(const items of itemsToCollect){
+    items.addEventListener("click", handleSelectedItem)
+}
+let selectedItems = [];
+function handleSelectedItem(event){
+    const itemLi = event.target
+    //Adcionando ou remevendo uma classe em JavaScript.
+    itemLi.classList.toggle("selected")
+    
+    const itemId = itemLi.dataset.id
+
+    //Verificar se existem itens selecionados, se sim
+    //pegar os itens selecionados.
+    const alreadySelected = selectedItems.findIndex( item => {
+        const itemsFound = item === itemId // Retorna true ou false.
+        return itemsFound
+    })
+    //Se estiver selecionado, tirar da versão.
+    if(alreadySelected >= 0){
+        const filteredItems = selectedItems.filter(item => {
+            const itemsIdDifferent = item != itemId // false
+            return itemsIdDifferent
+        })
+    }
+    // Se não tiver selecioando, adicionar a seleção.
+    //Atualizar os campos escondidos com os itens selecionados.
+}
